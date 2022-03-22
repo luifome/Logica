@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+	
+
+	function pulaLinha(){
+		
+		document.write("<br><br>");
+	}
+
+	var ano = 2022;
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+
+	var numeroLimite = parseInt(prompt("Digite o numero Limite: "));
+	var numeros = 2;
+
+	while(numeros <= numeroLimite){
+		mostra(numeros);
+		numeros = numeros + 2;
+
+	}
+
+	mostra("Fim!")
+</script>

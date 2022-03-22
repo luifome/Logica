@@ -1,0 +1,39 @@
+<script>
+	
+	function pulaLinha(){
+		
+		document.write("<br><br>");
+	}
+
+	var ano = 2022;
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaImc(peso, altura){
+		var imc= peso/ (altura * altura);
+		return imc;
+	}
+
+
+	var pesoLuiz = 79;
+	var alturaLuiz = 1.75;
+	var imcLuiz = calculaImc(pesoLuiz, alturaLuiz);
+	
+
+	var pesoAmigo = 75;
+	var alturaAmigo = 1.80;
+	var imcAmigo = calculaImc(pesoAmigo, alturaAmigo);
+	
+	var imcTotal = imcAmigo + imcLuiz;
+
+
+	mostra("O meu imc é: " + imcLuiz);
+	mostra("O imc do meu amigo é: " + imcAmigo);
+
+	mostra("A soma dos imc's é: " + imcTotal);
+	
+
+</script>

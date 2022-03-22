@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+	
+
+	function pulaLinha(){
+		
+		document.write("<br><br>");
+	}
+
+	var ano = 2022;
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var multiplicador = parseInt(prompt("Qual é o multiplicador: "));
+	var numero = 1
+	
+	while(numero <= 10){
+		mostra(multiplicador * numero);
+		numero++;
+	}
+	mostra("Fim!")
+</script>
